@@ -182,7 +182,110 @@
             background-color: rgba(0, 0, 0, 0.8);
         }
        
+        .wrapper {
+    margin-top: 10%;
+   margin-left: 20%;
+    display:flex;
+    width: 60%;
+    justify-content: space-around;
+    gap: 20px;
+}
 
+.card {
+    width:250px;
+    height: 355px;
+    padding: 2rem 1 rem;
+    background: #fff;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+    transform: 0.5s ease-in-out;
+    
+}
+
+.card:hover{
+    transform: translateY(20px);
+}
+
+.card:before {
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width:100%;
+    height: 100%;
+    background: rgba(113, 205, 241, 0.5);
+    z-index: 2;
+    transition: 0.5s all;
+    opacity: 0;
+}
+
+.card:hover:before{
+    opacity: 1;
+}
+
+.card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top:0;
+    left: 0;
+}
+
+.card .info {
+    position: relative;
+    z-index: 3;
+    color: #000021;
+    opacity: 0;
+    transform: translateY(0.5px);
+    transition: 0.5s all;
+}
+
+.card:hover .info {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.image {
+    margin-top: -25%;
+    margin-left: 5%;
+  
+}
+
+.image:hover{
+  opacity: 1;
+}
+
+
+
+.text {
+    margin-bottom: 20px; 
+}
+
+.new-container {
+        margin: 50px auto;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        width: 80%;
+        text-align: center;
+        border: 20px solid #091244;
+        background-color: #2784b9;
+    }
+
+    .new-container h2 {
+        color: #020202;
+        margin-bottom: 20px;
+    }
+
+    .new-container p {
+        color: #000000;
+        font-size: 16px;
+    }
     </style>
 </head>
 <body>
@@ -247,51 +350,84 @@
 
     </div>
     </div>
-
-    <div class="slider-container">
-        <div class="slider" id="imageSlider">
-            <img src="p6.jpg" alt="Image 1" >
-            <img src="p7.jpg" alt="Image 2">
-            <img src="p3.jpg" alt="Image 3">
-            <img src="p4.jpg" alt="Image 4">
-            <img src="p5.jpg" alt="Image 5">
-        </div>
-        <div class="slider-controls">
-            <button onclick="prevSlide()">❮</button>
-            <button onclick="nextSlide()">❯</button>
-        </div>
+    <div class="wrapper">
+        <div class="card"> 
+            <img src="f1.jpg" height="280" width="200">
+            <div class="info">
+              <h1>PICTURE 1</h1>
+            </div>
+       </div>
+  
+       <div class="card"> 
+          <img src="f2.jpg" height="280" width="200">
+          <div class="info">
+            <h1>PICTURE 2</h1>
+          </div>
+     </div>
+  
+     <div class="card"> 
+      <img src="f3.jpg" height="280" width="200">
+      <div class="info">
+        <h1>PICTURE 3</h1>
+      </div>
+     </div>
     </div>
 
-    <script>
-        let currentSlide = 0;
+      <div class="new-container">
+        <h1>⋆.˚🦋༘⋆ <i>MY FAMILY</i> ⋆.˚🦋༘⋆</h1>
+        
+        <p> This is my beloved family. Family is the foundation of who we are, a constant source of love, strength, and support in our lives. 
+            They are the ones who will comfort us in our struggles, support and stand by us no matter the circumstances.
+             The bond we share with our family is unbreakable, built on trust, understanding, and endless affection. Every moment spent together, 
+             every smile shared, and every challenge faced as a team reminds us of the deep connection we hold. Family teaches us the meaning of 
+             unconditional love, shaping our hearts and inspiring us to be better every day. Truly, there is no greater blessing than the warmth and
+              security of a loving family</p>
+    </div>
 
-        function showSlide(index) {
-            const slider = document.getElementById('imageSlider');
-            const slides = slider.children;
-            const totalSlides = slides.length;
+    <div class="wrapper">
+        <div class="card"> 
+            <img src="c1.jpg" height="280" width="200">
+            <div class="info">
+              <h1>PICTURE 1</h1>
+            </div>
+       </div>
+  
+       <div class="card"> 
+          <img src="c2.jpg" height="280" width="200">
+          <div class="info">
+            <h1>PICTURE 2</h1>
+          </div>
+     </div>
 
-           
-            if (index >= totalSlides) {
-                currentSlide = 0;
-            } else if (index < 0) {
-                currentSlide = totalSlides - 1;
-            } else {
-                currentSlide = index;
-            }
+     <div class="card"> 
+        <img src="c5.jpg" height="280" width="200">
+        <div class="info">
+          <h1>PICTURE 3</h1>
+        </div>
+   </div>
+  
+     <div class="card"> 
+      <img src="c3.jpg" height="280" width="200">
+      <div class="info">
+        <h1>PICTURE 4</h1>
+      </div>
+     </div>
+    </div>
 
-           
-            const offset = -currentSlide * 100;
-            slider.style.transform = `translateX(${offset}%)`;
-        }
+    <div class="new-container">
+        <h1>⋆.˚🦋༘⋆ <i>MY COUSINS</i> ⋆.˚🦋༘⋆</h1>
+        
+        <p> For me, cousins are more than just relatives. They are our first friends, 
+            our partners in adventure, and the ones who make every family gathering unforgettable.
+             Growing up together creates a bond filled with shared memories, inside jokes, and countless
+              moments of joy. They are the ones we can confide in, laugh with, and rely on during life's 
+              ups and downs. Cousins teach us the value of friendship within family, showing us that love 
+              knows no bounds. No matter how far life takes us, the connection with our cousins remains strong,
+               a reminder of the beautiful times we've spent together and the love that will always keep us close.</p>
 
-        function nextSlide() {
-            showSlide(currentSlide + 1);
-        }
-
-        function prevSlide() {
-            showSlide(currentSlide - 1);
-        }
-    </script>
+               <p> <b>🎀🫶🏻💌💓 I LOVE YOU GUYS FOREVER !!! 🎀🫶🏻💌💓</b> </p> 
+               
+    </div>
 
 </body>
 </html>

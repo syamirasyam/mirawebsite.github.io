@@ -6,9 +6,22 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="style.css" type="text/css" rel="stylesheet">
 
+
+
+    <style>
+        #digitalClock {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #030e3b;
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+    
 </head>
 <header>
 
+    
 
 <body>
 
@@ -42,6 +55,20 @@
 </section>
 
 <footer>
+    <div id="digitalClock"></div>
+    <script>
+        function updateClock() {
+            const clock = document.getElementById('digitalClock');
+            const now = new Date();
+            const hours = String(now.getHours()).padStart(2, '0');
+            const minutes = String(now.getMinutes()).padStart(2, '0');
+            const seconds = String(now.getSeconds()).padStart(2, '0');
+            clock.textContent = `${hours}:${minutes}:${seconds}`;
+        }
+        setInterval(updateClock, 1000); // Kemas kini setiap saat
+        updateClock(); // Panggil sekali untuk memaparkan masa segera
+    </script>
+    
     <p>&copy; 2024 Bumble Syam. All rights reserved.</p>
     <p>Follow us on <a href="https://www.instagram.com/ctnrsyamiraaqlz.__/profilecard/?igsh=ZmhxYWN3MzQ5d21h" target="_blank">Instagram</a> | <a href="https://www.tiktok.com/@bumblesyam?_t=8rpYwiYt3q9&_r=1" target="_blank">TikTok</a></p>
 </footer>

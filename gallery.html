@@ -178,47 +178,27 @@
 
    
     <div class="tab-content nature active">
-        <div class="gallery-item"><img src="mee2.png" alt="Picture"></div>
-        <div class="gallery-item"><img src="me1.png" alt="Picture"></div>
-        <div class="gallery-item"><img src="p3.jpg" alt="Picture"></div>
-        <div class="gallery-item"><img src="p4.jpg" alt="Picture"></div>
-        <div class="gallery-item"><img src="p5.jpg" alt="Picture"></div>
-        <div class="gallery-item"><img src="p6.jpg" alt="Picture"></div>
-        <div class="gallery-item"><img src="p7.jpg" alt="Picture"></div>
-        <div class="gallery-item"><img src="concert.jpg" alt="Picture"></div>
-        <div class="gallery-item"><img src="work.jpg" alt="Picture"></div>
-        <div class="gallery-item"><img src="p8.jpg" alt="Picture"></div>
-        <div class="gallery-item"><img src="p2.jpg" alt="Picture"></div>
-        <div class="gallery-item"><img src="p9.jpg" alt="Picture"></div>
+        <div class="gallery-item"><a href="mee2.png"><img src="mee2.png" alt="Picture"></div></a>
+        <div class="gallery-item"><a href="me1.png"><img src="me1.png" alt="Picture"></div></a>
+        <div class="gallery-item"><a href="p3.jpg"><img src="p3.jpg" alt="Picture"></div></a>
+        <div class="gallery-item"><a href="p4.jpg"><img src="p4.jpg" alt="Picture"></div></a>
+        <div class="gallery-item"><a href="p5.jpg"><img src="p5.jpg" alt="Picture"></div></a>
+        <div class="gallery-item"><a href="p6.jpg"><img src="p6.jpg" alt="Picture"></div></a>
+        <div class="gallery-item"><a href="p7.jpg"><img src="p7.jpg" alt="Picture"></div></a>
+        <div class="gallery-item"><a href="concert.jpg"><img src="concert.jpg" alt="Picture"></div></a>
+        <div class="gallery-item"><a href="work.jpg"><img src="work.jpg" alt="Picture"></div></a>
+        <div class="gallery-item"><a href="p8.jpg"><img src="p8.jpg" alt="Picture"></div></a>
+        <div class="gallery-item"><a href="p2.jpg"><img src="p2.jpg" alt="Picture"></div></a>
+        <div class="gallery-item"><a href="p9.jpg"><img src="p9.jpg" alt="Picture"></div></a>
     </div>
 
-
-
     
+    
+
     <footer>
         <p>&copy; 2024 Bumble Syam. All rights reserved.</p>
     </footer>
 
-    <script>
-     
-        function showTab(tabName) {
-         
-            const allTabs = document.querySelectorAll('.tab-content');
-            allTabs.forEach(tab => {
-                tab.classList.remove('active');
-            });
-
-           
-            const allButtons = document.querySelectorAll('.tab');
-            allButtons.forEach(button => {
-                button.classList.remove('active');
-            });
-
-            
-            document.querySelector(`.${tabName}`).classList.add('active');
-            document.querySelector(`.tab.${tabName}`).classList.add('active');
-        }
-    </script>
-
+    
 </body>
 </html>

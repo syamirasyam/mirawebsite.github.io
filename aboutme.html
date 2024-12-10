@@ -6,6 +6,40 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="style.css" type="text/css" rel="stylesheet">
 
+<style>
+    .numbered-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .numbered-list li {
+      counter-increment: step-counter;
+      padding-left: 30px;
+      margin: 10px 0;
+      position: relative;
+    }
+    
+    .numbered-list li::before {
+      content: counter(step-counter);
+      width: 25px;
+      height: 25px;
+      background-color: #0c2838;
+      color: white;
+      border-radius: 50%;
+      display: inline-block;
+      text-align: center;
+      line-height: 25px;
+      font-weight: bold;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+    
+
+</style>
+
+
+
 </head>
 
 <header>
@@ -182,10 +216,10 @@
 
   <div class="container container5">
     <h1 class="text"><u>MY FAVOURITE MOVIE</u>𓍢ִ໋🌷͙֒</h1>
- 
-  <ul type="none" >
+
+  
     <p><b><li style="color:rgb(17, 25, 100);">TRANSFORMERS: THE LAST KNIGHT</li></p></b>
-    <p> <video class="move-video3" controls style = "width:300px ; height:200px;">
+    <p> <video class="move-video3" controls style = "width:200px ; height:200px;">
       <source src="transformers.mp4" type="video/mp4" align="center" >
       <source src="movie.ogg" type="video/ogg">
   </p>
@@ -194,9 +228,27 @@
 
   <p>
     <img src="bumblebee.gif" alt="Transformers GIF" style="width:280px; height:auto; margin-top:-200px; margin-left: 320px;">
-</p
+  </p>
+  
+  
+  <div class="numbered-list" >
+  </br><h1 style="font-family: 'Courier New', Courier, monospace;" >MY OTHERS FAVOURITE MOVIE </h1>
+    <li><a href="https://youtu.be/7SlILk2WMTI?si=DdrFONoM7qUSsIDS" target="_blank"> Captain America: The Winter Soldier</a></li>
+    <p><li><a href=" https://youtu.be/TcMBFSGVi1c?si=TvEoF2tbyfZ0IBc6" target="_blank">Avengers: Endgame</a></li></p>
+    <li><a href="https://youtu.be/32RAq6JzY-w?si=DSQ7xrLFxlEW_j6U" target="_blank"> Fast X</a></li>
+  </div>
+</div>
 
-  </ul>
+</div>
+
+
+
+  <img src="piano.jpg" usemap="#image_map" style="margin-top: 300px;">
+  <map name="image_map">
+    <area alt="music notes" title="music notes" target="_blank" href="https://youtu.be/NVwfI2WEChc?si=fHEB8RJOk76WTY77" coords="81,114 257,161 393,243 513,555 411,565 251,597 " shape="polygon">
+  </map>
+  
+
 </div>
 
 
